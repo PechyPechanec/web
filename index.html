@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Základy ekonomiky</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <h1>Ekonomika</h1>
+        <div class="links">
+            <a class="link desktop" href="#uvod">Úvod</a>
+            <div class="vl desktop"></div>
+            <a class="link desktop" href="#zakladnipojmy">Základní pojmy</a>
+            <a class="link desktop" href="#typytrhu">Typy trhů</a>
+             <div class="vl desktop"></div>
+            <a class="link desktop" href="#ukazatele">Ukazatele</a>
+            <a class="link desktop" href="#nabidka&poptavka">Nabídka & poptávka</a>
+            <button onclick="openTest()" class="btn">Spustit test</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="scroll-element" id="uvod"></div>
+            <article>
+                <h2>Co je <span>Ekonomika</span>?</h2>
+                <p>Ekonomika je věda, která studuje, jak společnost využívá vzácné zdroje k výrobě užitečných komodit a jak je distribuuje mezi různé skupiny lidí. Zabývá se rozhodováním o tom, co vyrábět, jak vyrábět a pro koho vyrábět.</p>
+                <p>Základní ekonomický problém spočívá v neomezenosti lidských potřeb a omezenosti zdrojů. Tento konflikt nutí společnost k efektivnímu hospodaření a rozhodování o prioritách.</p>
+                <div class="btns">
+                <a href="#zakladnipojmy" class="btn yellow">Dozvědět se víc</a>
+                <button onclick="openTest()" class="btn white" href="">Spustit test</button>
+                </div>
+            </article>
+            <img src="assets/heroimg.png" alt="">
+        </section>
+        <section class="cards-section">
+             <div class="scroll-element" id="zakladnipojmy"></div>
+            <h4>Základní ekonomické pojmy</h4>
+            <div class="cards">
+                <article class="card">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.50001 4.25H25.5L31.1667 12.75L17 31.1667L2.83334 12.75L8.50001 4.25Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5833 4.25L11.3333 12.75L17 31.1667L22.6667 12.75L18.4167 4.25" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.83334 12.75H31.1667" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    <div class="right">
+                        <h5>Vzácnost</h5>
+                        <p>Základní ekonomický problém - neomezené lidské potřeby vs. omezené zdroje. Vzácnost nutí k rozhodování a prioritizaci.</p>
+                    </div>
+                </article>
+                 <article class="card">
+       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.6667 22.6667L26.9167 11.3333L31.1667 22.6667C29.9342 23.5875 28.4467 24.0833 26.9167 24.0833C25.3867 24.0833 23.8992 23.5875 22.6667 22.6667Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.83334 22.6667L7.08334 11.3333L11.3333 22.6667C10.1008 23.5875 8.61334 24.0833 7.08334 24.0833C5.55334 24.0833 4.06584 23.5875 2.83334 22.6667Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.91666 29.75H24.0833" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 4.25V29.75" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.25 9.91668H7.08333C9.91667 9.91668 14.1667 8.50001 17 7.08334C19.8333 8.50001 24.0833 9.91668 26.9167 9.91668H29.75" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+                    <div class="right">
+                        <h5>Nákladové ceny</h5>
+                        <p>Hodnota nejlepší alternativy, které se vzdáváme při rozhodování. Každé rozhodnutí má svou alternativní cenu.</p>
+                    </div>
+                </article>
+                 <article class="card">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 22.6667H17.0146" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.6667 22.6667H22.6812" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.25 26.9167C4.25 27.6681 4.54851 28.3888 5.07986 28.9201C5.61122 29.4515 6.33189 29.75 7.08333 29.75H26.9167C27.6681 29.75 28.3888 29.4515 28.9201 28.9201C29.4515 28.3888 29.75 27.6681 29.75 26.9167V12.0417C29.7501 11.9146 29.7161 11.7898 29.6514 11.6804C29.5867 11.5711 29.4938 11.4811 29.3824 11.4199C29.271 11.3588 29.1452 11.3288 29.0182 11.333C28.8912 11.3372 28.7677 11.3755 28.6606 11.4438L22.3394 15.4728C22.2323 15.5412 22.1088 15.5795 21.9818 15.5837C21.8548 15.5879 21.729 15.5579 21.6176 15.4967C21.5062 15.4356 21.4133 15.3456 21.3486 15.2362C21.2839 15.1268 21.2499 15.0021 21.25 14.875V12.0417C21.2501 11.9146 21.2161 11.7898 21.1514 11.6804C21.0867 11.5711 20.9938 11.4811 20.8824 11.4199C20.771 11.3588 20.6452 11.3288 20.5182 11.333C20.3912 11.3372 20.2677 11.3755 20.1606 11.4438L13.8408 15.4728C13.7337 15.5416 13.61 15.5802 13.4828 15.5846C13.3556 15.589 13.2295 15.559 13.1179 15.4978C13.0063 15.4366 12.9132 15.3465 12.8485 15.2369C12.7837 15.1273 12.7497 15.0023 12.75 14.875V7.08333C12.75 6.33189 12.4515 5.61122 11.9201 5.07986C11.3888 4.54851 10.6681 4.25 9.91667 4.25H7.08333C6.33189 4.25 5.61122 4.54851 5.07986 5.07986C4.54851 5.61122 4.25 6.33189 4.25 7.08333V26.9167Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.3333 22.6667H11.3479" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+                    <div class="right">
+                        <h5>Produkční faktory</h5>
+                        <p>Základní vstupy do výroby: práce, půda, kapitál a podnikatelské schopnosti. Jejich kombinace vytváří hodnotu.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+       
+       
+  <section class="types-section">
+    <div class="left block"></div>
+    <div class="right block"></div>
+             <div class="scroll-element" id="typytrhu"></div>
+            <h3>Typy trhů</h3>
+            <div class="cards-wrap">
+ <div class="cards">
+                <article class="card">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.48395 3.00947 7.06897 3.99122 5.26 5.74L3 8" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3V8H8" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21C14.516 20.9905 16.931 20.0088 18.74 18.26L21 16" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 16H21V21" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+                    <div class="right">
+                        <h5>Dokonalá konkurence</h5>
+                        <p>Mnoho prodejců, standardizované produkty, žádné bariéry vstupu. Teoretický ideál tržního hospodářství.</p>
+                    </div>
+                </article>
+                <article class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.562 3.26599C11.6052 3.18759 11.6686 3.12222 11.7456 3.07669C11.8227 3.03116 11.9105 3.00714 12 3.00714C12.0895 3.00714 12.1773 3.03116 12.2544 3.07669C12.3314 3.12222 12.3948 3.18759 12.438 3.26599L15.39 8.86999C15.4604 8.99975 15.5586 9.11232 15.6777 9.1996C15.7968 9.28689 15.9337 9.34674 16.0786 9.37484C16.2235 9.40295 16.3729 9.39862 16.5159 9.36216C16.659 9.32571 16.7922 9.25803 16.906 9.16399L21.183 5.49999C21.2651 5.43321 21.3663 5.3942 21.472 5.38859C21.5776 5.38297 21.6824 5.41103 21.7711 5.46873C21.8598 5.52643 21.9279 5.61079 21.9657 5.70968C22.0034 5.80856 22.0087 5.91686 21.981 6.01899L19.147 16.265C19.0891 16.4747 18.9645 16.6597 18.792 16.7922C18.6195 16.9247 18.4085 16.9973 18.191 16.999H5.81C5.59233 16.9975 5.38111 16.925 5.20839 16.7925C5.03567 16.66 4.91089 16.4748 4.853 16.265L2.02 6.01999C1.99225 5.91786 1.99762 5.80956 2.03534 5.71068C2.07306 5.61179 2.14118 5.52743 2.2299 5.46973C2.31862 5.41203 2.42335 5.38397 2.52904 5.38959C2.63472 5.3952 2.73589 5.43421 2.818 5.50099L7.094 9.16499C7.2078 9.25903 7.341 9.32671 7.48406 9.36316C7.62712 9.39962 7.77647 9.40395 7.9214 9.37584C8.06632 9.34774 8.20323 9.28789 8.32229 9.2006C8.44135 9.11331 8.5396 9.00075 8.61 8.87099L11.562 3.26599Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 21H19" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+                    <div class="right">
+                        <h5>Monopol</h5>
+                        <p>Jeden prodejce, jedinečný produkt, vysoké bariéry vstupu. Kontrola nad cenou a množstvím.</p>
+                    </div>
+                </article>
+                
+            </div>
+            <div class="cards">
+ <article class="card">
+   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 17L13 19C13.197 19.197 13.4308 19.3532 13.6882 19.4598C13.9456 19.5665 14.2214 19.6213 14.5 19.6213C14.7786 19.6213 15.0544 19.5665 15.3118 19.4598C15.5692 19.3532 15.803 19.197 16 19C16.197 18.803 16.3532 18.5692 16.4598 18.3118C16.5665 18.0544 16.6213 17.7786 16.6213 17.5C16.6213 17.2214 16.5665 16.9456 16.4598 16.6882C16.3532 16.4308 16.197 16.197 16 16" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 14L16.5 16.5C16.8978 16.8978 17.4374 17.1213 18 17.1213C18.5626 17.1213 19.1022 16.8978 19.5 16.5C19.8978 16.1022 20.1213 15.5626 20.1213 15C20.1213 14.4374 19.8978 13.8978 19.5 13.5L15.62 9.62002C15.0575 9.05821 14.295 8.74265 13.5 8.74265C12.705 8.74265 11.9425 9.05821 11.38 9.62002L10.5 10.5C10.1022 10.8978 9.56259 11.1213 8.99998 11.1213C8.43737 11.1213 7.89781 10.8978 7.49998 10.5C7.10216 10.1022 6.87866 9.56262 6.87866 9.00002C6.87866 8.43741 7.10216 7.89784 7.49998 7.50002L10.31 4.69002C11.2222 3.78016 12.4119 3.20057 13.6906 3.04299C14.9694 2.88541 16.2641 3.15885 17.37 3.82002L17.84 4.10002C18.2658 4.357 18.772 4.44613 19.26 4.35002L21 4.00002" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 3L22 14H20" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L2 14L8.5 20.5C8.89782 20.8978 9.43739 21.1213 10 21.1213C10.5626 21.1213 11.1022 20.8978 11.5 20.5C11.8978 20.1022 12.1213 19.5626 12.1213 19C12.1213 18.4374 11.8978 17.8978 11.5 17.5" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 4H11" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+
+                    <div class="right">
+                        <h5>Oligopol</h5>
+                        <p>Málo velkých prodejců, produkty mohou být odlišené. Vzájemná závislost při rozhodování.</p>
+                    </div>
+                </article>
+                 <article class="card">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+
+                    <div class="right">
+                        <h5>Monopolistická konkurence</h5>
+                        <p>Mnoho prodejců, diferencované produkty, nízké bariéry vstupu. Konkurence prostřednictvím kvality a marketingu.</p>
+                    </div>
+                </article>
+            </div>
+            </div>
+           
+        </section>
+         <section class="cards-section">
+             <div class="scroll-element" id="ukazatele"></div>
+            <h4>Ekonomické ukazatele</h4>
+            <div class="cards">
+                <article class="card">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H21" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 9L14 14L10 10L7 13" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+                    <div class="right">
+                        <h5>Hrubý domácí produkt</h5>
+                        <p>Celková hodnota všech finálních statků a služeb vyprodukovaných v ekonomice za určité období. Klíčový ukazatel ekonomické výkonnosti.</p>
+                    </div>
+                </article>
+                 <article class="card">
+     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V8C2 7.46957 2.21071 6.96086 2.58579 6.58579C2.96086 6.21071 3.46957 6 4 6H20C20.5304 6 21.0391 6.21071 21.4142 6.58579C21.7893 6.96086 22 7.46957 22 8V13" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 19L19 22L22 19" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 12H18.01" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 16V22" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 12H6.01" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+                    <div class="right">
+                        <h5>Inflace</h5>
+                        <p>Všeobecný růst cenové hladiny v ekonomice. Snižuje kupní sílu peněz a ovlivňuje ekonomické rozhodování spotřebitelů i firem.</p>
+                    </div>
+                </article>
+                 <article class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 3.12799C16.8578 3.35036 17.6174 3.85125 18.1597 4.55205C18.702 5.25285 18.9962 6.11388 18.9962 6.99999C18.9962 7.8861 18.702 8.74713 18.1597 9.44793C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#0E0032" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+                    <div class="right">
+                        <h5>Nezaměstnanost</h5>
+                        <p>Podíl lidí, kteří aktivně hledají práci, ale nemohou ji najít. Důležitý sociální a ekonomický ukazatel.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="separated-section">
+              <div class="scroll-element" id="nabidka&poptavka"></div>
+            <article class="left">
+                <h4>Nabídka (Supply)</h4>
+                <p><span>Zákon nabídky:</span> Při vyšší ceně jsou prodejci ochotni nabídnout více zboží.</p>
+                <ul>
+                    <li>Výrobní náklady</li>
+                    <li>Technologie</li>
+                    <li>Počet prodejců</li>
+                    <li>Očekávání do budoucna</li>
+                    <li>Ceny substitutů</li>
+                </ul>
+            </article>
+            <div class="separator"></div>
+            <article class="right">
+               
+                <h4>Poptávka (Demand)</h4>
+                <p><span>Zákon poptávky:</span> Při vyšší ceně poptávají spotřebitelé méně zboží.</p>
+                <ul>
+                    <li>Příjem spotřebitelů</li>
+                    <li>Preference a móda</li>
+                    <li>Ceny substitutů</li>
+                    <li>Ceny komplementů</li>
+                    <li>Očekávání spotřebitelů</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h6>Základy ekonomiky - vzdělávací materiál</h6>
+        <h6>Tomáš Pechanec 2025 ©</h6>
+    </footer>
+  
+      
+       
+
+        
+
+
+        
+
+       
+
+       
+    
+
+    <!-- Test Popup -->
+    <div class="popup-overlay" id="testPopup">
+        <div class="popup">
+            <h2>Test ze základů ekonomiky</h2>
+            <div id="questions">
+                <div class="question">
+                    <h3>1. Co je základní ekonomický problém?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="a">
+                            <span>Vysoká nezaměstnanost</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="b">
+                            <span>Neomezené potřeby vs. omezené zdroje</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="c">
+                            <span>Inflace</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>2. Co znamená nákladová cena (opportunity cost)?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="a">
+                            <span>Skutečné náklady výroby</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="b">
+                            <span>Hodnota nejlepší alternativy, které se vzdáváme</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="c">
+                            <span>Cena produktu na trhu</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>3. Jaké jsou základní produkční faktory?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="a">
+                            <span>Práce, půda, kapitál, podnikatelské schopnosti</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="b">
+                            <span>Peníze, zboží, služby</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="c">
+                            <span>Nabídka, poptávka, cena</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>4. Co charakterizuje monopol?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="a">
+                            <span>Mnoho prodejců, standardizované produkty</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="b">
+                            <span>Jeden prodejce, jedinečný produkt, vysoké bariéry vstupu</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="c">
+                            <span>Málo velkých prodejců</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>5. Co říká zákon poptávky?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="a">
+                            <span>Při vyšší ceně poptávají spotřebitelé více zboží</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="b">
+                            <span>Při vyšší ceně poptávají spotřebitelé méně zboží</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="c">
+                            <span>Poptávka je nezávislá na ceně</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>6. Co je HDP?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q6" value="a">
+                            <span>Hrubý domácí produkt - celková hodnota finálních statků a služeb</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="b">
+                            <span>Hrubý domácí příjem</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="c">
+                            <span>Hrubý domácí dluh</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>7. Co je inflace?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q7" value="a">
+                            <span>Pokles cenové hladiny</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="b">
+                            <span>Všeobecný růst cenové hladiny</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="c">
+                            <span>Stabilní ceny</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>8. Jaký typ trhu má mnoho prodejců s diferencovanými produkty?</h3>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q8" value="a">
+                            <span>Dokonalá konkurence</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="b">
+                            <span>Monopol</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="c">
+                            <span>Monopolistická konkurence</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results" id="results">
+                <h3>Výsledky testu</h3>
+                <p id="score"></p>
+                <p id="feedback"></p>
+            </div>
+
+            <div class="popup-buttons">
+                <button class="btn" onclick="closeTest()">Zavřít</button>
+                <button class="btn" onclick="submitTest()" id="submitBtn">Odeslat test</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
